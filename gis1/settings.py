@@ -14,10 +14,14 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# settings.py의 부모의 부모 ---> 최상위 프로젝트 폴더 경로
 
 
 env_list = dict()
 local_env = open(os.path.join(BASE_DIR, '.env'))
+# 운영체제 관련해서 경로가 들어있는 곳이 PATH
+# 최상위 폴더 안의 .env 파일을 연다.
+
 while True:
     line = local_env.readline()
     if not line:
