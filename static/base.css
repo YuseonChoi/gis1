@@ -1,0 +1,17 @@
+.prairie_header_logo{
+    margin: 2rem 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.prairie_header_button {
+    margin-bottom: 2rem;
+}
+
+.prairie_footer_logo {
+    margin: 1.5rem 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.prairie_footer_button {
+    margin-top: 2rem;
+}
