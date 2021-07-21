@@ -1,11 +1,12 @@
 def check_integer(func):
     def decorated(width, height):
-        if width >0 and height > 0:
+        if width > 0 and height > 0:
             return func(width, height)
         else:
             raise ValueError('Input must be positive value')
     return decorated()
 
+@check_integer
 def triangle(width, height):
     return width * height / 2
 
