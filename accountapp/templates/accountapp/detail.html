@@ -27,9 +27,7 @@
             {% endif %}
         </div>
 
-
         {% if user == target_user %}
-
         <div>
             <a href="{% url 'accountapp:update' pk=target_user.pk %}"
                class="material-icons round_button mx-1">
@@ -42,5 +40,9 @@
         </div>
         {% endif %}
     </div>
+
+         <div>
+            {% include 'snippets/list_fragment.html' with article_list=object_list %}
+         </div>
 
 {% endblock %}
