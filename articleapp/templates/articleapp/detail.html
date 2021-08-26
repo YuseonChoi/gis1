@@ -21,13 +21,13 @@
         </div>
         <hr>
         <div class="my-5">
-            {#  게시물내용  #}
+            {#  게시물 내용  #}
             <img src="{{ target_article.image.url }}"
                  alt=""
                  class="article_image">
 
             <div class="article_content">
-                {{ target_article.content }}
+                {{ target_article.content | safe }}
             </div>
 
             {% if target_article.writer == user %}
