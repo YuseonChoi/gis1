@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN git 'dfahkfj'
+RUN echo 'asgdgasd'
 
 RUN git clone https://github.com/YuseonChoi/gis1.git
 
